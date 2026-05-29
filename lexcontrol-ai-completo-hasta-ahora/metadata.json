@@ -1,0 +1,6 @@
+{
+  "name": "LexControl AI",
+  "description": "Plataforma integral de cumplimiento normativo y gestión de procesos judiciales para empresas en el Ecuador (~2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

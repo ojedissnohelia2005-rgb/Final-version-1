@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-cream: #FFFDF9;
+  --color-paper: #FAF7F0;
+  --color-paperDark: #F2EDE3;
+  --color-charcoal: #333333;
+  --color-charcoalSoft: #5C5750;
+  --color-charcoalMuted: #8A847C;
+  --color-sidebarRose: #8E6B6B;
+  --color-roseOld: #D4A5A5;
+  --color-roseSoft: #F4E5E5;
+  --color-coffeeNav: #5D4037;
+  --color-coffeeSoft: #8D6E63;
+  --color-borderSoft: rgba(51,51,51,0.08);
+  --color-borderMedium: rgba(51,51,51,0.16);
+  --color-success: #4A6B47;
+  --color-successSoft: #DCE5DA;
+  --color-warning: #B8842B;
+  --color-warningSoft: #F5EBD5;
+  --color-danger: #8B3A3A;
+  --color-dangerSoft: #F0D6D6;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", SFMono-Regular, monospace;
+}
+
+.dark {
+  --color-white: #1C1917;      /* Warm stone card background */
+  --color-cream: #12100F;      /* Soft off-black background */
+  --color-paper: #1A1715;      /* Secondary block elements background */
+  --color-paperDark: #26211E;  /* Warm stone borders */
+  --color-charcoal: #E7E5E4;   /* Soft editorial gray-white */
+  --color-charcoalSoft: #D6D3D1;/* Muted secondary labels */
+  --color-charcoalMuted: #A8A29E;
+  --color-sidebarRose: #F3C6C6;
+  --color-roseOld: #B08585;
+  --color-roseSoft: #2E1B1B;
+  --color-coffeeNav: #171514;
+  --color-coffeeSoft: #2D2421;
+  --color-borderSoft: rgba(231, 229, 228, 0.08);
+  --color-borderMedium: rgba(231, 229, 228, 0.15);
+  --color-success: #34D399;
+  --color-successSoft: #064E3B;
+  --color-warning: #FBBF24;
+  --color-warningSoft: #78350F;
+  --color-danger: #F87171;
+  --color-dangerSoft: #4C0519;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Bento card transitions and aesthetic styling */
+.bento-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-borderSoft);
+  border-radius: 1rem; /* 16px */
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card-dark {
+  background-color: #5D4037;
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 20px -2px rgba(93, 64, 55, 0.15);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card-rose {
+  background-color: #D4A5A5;
+  color: #333333;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: inset 0 -4px 12px rgba(142, 107, 107, 0.15);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover, .bento-card-dark:hover, .bento-card-rose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(51, 51, 51, 0.05), 0 8px 10px -6px rgba(51, 51, 51, 0.05);
+}
+
+/* Custom scrollbars for a highly polished feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(142, 107, 107, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(142, 107, 107, 0.4);
+}

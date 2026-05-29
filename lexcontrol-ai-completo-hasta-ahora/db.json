@@ -1,0 +1,109 @@
+{
+  "seed_version": 10,
+  "profiles": [
+    {
+      "email": "nohelia.ojedis@uees.edu.ec",
+      "password": "Superadmin",
+      "nombre": "Nohelia Ojedis",
+      "rol": "super_admin",
+      "activo": true,
+      "estudio_juridico": "LexControl AI"
+    },
+    {
+      "email": "fiorella.rendon@montblanc.com.ec",
+      "password": "externo1",
+      "nombre": "Fiorella Rendon",
+      "rol": "invitado",
+      "activo": true,
+      "empresa_id": "duragas-id",
+      "estudio_juridico": "Montblanc",
+      "permitir_compliance": false,
+      "permitir_judicial": true,
+      "tarea_programada_tipo": "Acceso Judicial y Revisión Externa"
+    },
+    {
+      "email": "gabriel.torres@duragas.com.ec",
+      "password": "administrador1",
+      "nombre": "Gabriel Torres",
+      "rol": "admin",
+      "activo": true,
+      "empresa_id": "duragas-id",
+      "estudio_juridico": "DURAGAS S.A."
+    },
+    {
+      "email": "emily.campos@duragas.com.ec",
+      "password": "inhouse1",
+      "nombre": "Emily Campos",
+      "rol": "user",
+      "activo": true,
+      "empresa_id": "duragas-id",
+      "estudio_juridico": "DURAGAS S.A. - In-house"
+    }
+  ],
+  "empresas": [
+    {
+      "id": "duragas-id",
+      "nombre": "DURAGAS S.A.",
+      "sector": "GLP, transporte y distribución industrial",
+      "detalles": "Workspace real listo para cargar matriz, documentos, procesos, sedes y distribuidoras.",
+      "responsable_id": "gabriel.torres@duragas.com.ec",
+      "complianceScore": 0,
+      "codigo_acceso": "LX-DURA-7788",
+      "admin_unlock_code": "SEC-DURA-99",
+      "representante_legal_nombre": "",
+      "procurador_judicial_nombre": "",
+      "sedes": []
+    }
+  ],
+  "empresa_accesos": [
+    {
+      "perfil_email": "gabriel.torres@duragas.com.ec",
+      "empresa_id": "duragas-id",
+      "rol_en_empresa": "admin"
+    },
+    {
+      "perfil_email": "emily.campos@duragas.com.ec",
+      "empresa_id": "duragas-id",
+      "rol_en_empresa": "interno"
+    },
+    {
+      "perfil_email": "fiorella.rendon@montblanc.com.ec",
+      "empresa_id": "duragas-id",
+      "rol_en_empresa": "externo"
+    }
+  ],
+  "matriz_cumplimiento": [],
+  "propuestas_pendientes": [],
+  "notarias": [],
+  "unidades_judiciales": [],
+  "fiscalias": [],
+  "procesos_judiciales": [],
+  "demandas": [],
+  "alertas_legales": [],
+  "eventos": [],
+  "chat_mensajes": [],
+  "notificaciones": [],
+  "correos_simulados": [],
+  "gabinete_documentos": [],
+  "normativas_documentos": [],
+  "satje_schedules": {},
+  "matriz_options": {
+    "gerencias": [
+      "Gerencia General",
+      "Gerencia Legal",
+      "Gerencia de Operaciones",
+      "Gerencia Financiera",
+      "Talento Humano"
+    ],
+    "personas_a_cargo": [
+      "Gabriel Torres",
+      "Emily Campos",
+      "Fiorella Rendon"
+    ],
+    "encargados_compliance": [
+      "Administrador",
+      "Abogada in-house",
+      "Abogada externa revisora"
+    ]
+  }
+}
